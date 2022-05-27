@@ -1,24 +1,8 @@
 // Vat.spec
 
 methods {
-    Art(bytes32) returns (uint256) envfree
-    art(bytes32, address) returns (uint256) envfree
-    can(address, address) returns (uint256) envfree
-    dai(address) returns (uint256) envfree
     debt() returns (uint256) envfree
-    dust(bytes32) returns (uint256) envfree
-    gem(bytes32, address) returns (uint256) envfree
-    ilks(bytes32) returns (uint256, uint256, uint256, uint256, uint256) envfree
-    ink(bytes32, address) returns (uint256) envfree
-    Line() returns (uint256) envfree
-    line(bytes32) returns (uint256) envfree
-    live() returns (uint256) envfree
-    rate(bytes32) returns (uint256) envfree
-    sin(address) returns (uint256) envfree
-    spot(bytes32) returns (uint256) envfree
-    urns(bytes32, address) returns (uint256, uint256) envfree
     vice() returns (uint256) envfree
-    wards(address) returns (uint256) envfree
 }
 
 ghost sumOfVaultDebtGhost() returns uint256 {
